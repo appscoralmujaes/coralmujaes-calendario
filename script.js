@@ -13,8 +13,5 @@ $(document).ready(function () {
     event.target.classList.contains("focused-element")
       ? $(event.target).removeClass("focused-element")
       : $(event.target).addClass("focused-element");
-
-    console.log(event.target, "onclick");
-    console.log("Dia seleccionado");
   });
 });
