@@ -6,12 +6,14 @@ $(document).ready(function () {
       right: "today",
     },
   });
-});
-$(document).ready(function () {
+
   $(".fc-day-number").on("click", function (event) {
     event.preventDefault();
-    event.target.classList.contains("focused-element")
-      ? $(event.target).removeClass("focused-element")
-      : $(event.target).addClass("focused-element");
+
+    // Remover la clase 'focused-element' de todos los elementos
+    $(".fc-day-number").removeClass("focused-element");
+
+    // Agregar la clase 'focused-element' al elemento clicado
+    $(event.target).addClass("focused-element");
   });
 });
